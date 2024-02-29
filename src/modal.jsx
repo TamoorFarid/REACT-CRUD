@@ -14,14 +14,14 @@ useEffect(()=>{
         data = document.getElementById('update-input').value;
         props.setNewData(data, false,props.index);
       };
-      
+
     const handleCancel = () =>{
         props.visibility(false)
     }
     return(
         <>
             <Modal
-            title="Basic Modal"
+            title="Update Task"
             open={true}
             onOk={handleOK}
             onCancel={handleCancel}
